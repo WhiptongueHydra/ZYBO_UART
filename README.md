@@ -1,5 +1,5 @@
 # ZYBO UART
-Testing pure PL UART driver on the pmodUSBUART. Really simple test just to validate my logic, and zybo doesnt have loads of switches, or seven seg decoder, to do custom data. Will eventually add a RAM I think to rattle off loads of data in chunks for a more interesting test. 
+Testing pure PL UART driver for the pmodUSBUART on zybo z7-20. Really simple test just to validate my logic, and zybo doesnt have loads of switches, or seven seg decoder, to do custom data. Will eventually add a RAM I think to rattle off loads of data in chunks for a more interesting test. 
 <img width="851" height="682" alt="image" src="https://github.com/user-attachments/assets/1c776170-1378-4e3a-81b3-7b4bfa4a2a85" />
 
 
