@@ -2,6 +2,8 @@
 Testing my UART driver on the pmodUSBUART. 
 
 ## pmodUSBUART Pins
+Tx of FPGA -> Rx of this module 
+Rx of FPGA -> Tx of this module
 <img width="441" height="421" alt="image" src="https://github.com/user-attachments/assets/0c653674-53b2-4723-9461-c6f09cda6427" />
 
 ## pmod Connector 
