@@ -7,7 +7,7 @@ Testing my UART driver on the pmodUSBUART.
 ## pmod Connector 
 Say we are looking into a pmod connector head on, it matches the below pinout rotated 90 degrees clockwise. i.e.,
 
-6  5  4 3 2 1
+6  5  4 3 2 1 \t
 12 11 10 9 8 7
 
 <img width="763" height="213" alt="image" src="https://github.com/user-attachments/assets/21ae3659-3115-4b22-a713-492e869f4098" />
