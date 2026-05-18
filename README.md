@@ -16,3 +16,9 @@ Say we are looking into a pmod connector head on, it matches the below pinout ro
 12 11 10 9 8 7
 
 <img width="763" height="213" alt="image" src="https://github.com/user-attachments/assets/21ae3659-3115-4b22-a713-492e869f4098" />
+
+
+## Wow it works
+I am not going through the rigmarole of taking a picture on my phone to upload just trust me  
+
+<img width="658" height="422" alt="image" src="https://github.com/user-attachments/assets/1bde528b-e765-47ff-bfb1-6476d49df3c2" />
