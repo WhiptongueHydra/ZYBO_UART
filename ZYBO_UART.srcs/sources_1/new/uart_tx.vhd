@@ -2,6 +2,9 @@ library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 
+library work;
+use work.uart_pkg.all;
+
 entity uart_tx is
 	generic (
 		positive_parity: std_logic := '1'	
@@ -34,20 +37,6 @@ architecture A1 of uart_tx is
 	signal shift_count: unsigned(3 downto 0) := "1011";
 	signal done: std_logic := '0';
 
-	function parity_check(test_data: std_logic_vector(data_in'range) := (others => '0'); parity_type: std_logic := '1') return std_logic is
-		variable running_positive_parity: std_logic := '0'; -- Because 0 xor A = A identity  
-	begin
-		for i in test_data'range loop
-			running_positive_parity := running_positive_parity xor test_data(i);
-		end loop;
-
-		if parity_type='1' then
-			return running_positive_parity;
-		else
-			return (not running_positive_parity);
-		end if;
-	end function parity_check;
-
 begin
 	tx <= '1' when tx_ctrl='1' else shift_reg(0);
 	parity_reg <= parity_check(data_in);	
@@ -61,7 +50,7 @@ begin
 				shift_reg <= (others => '1');		
 			else
 			    done <= '0';
-			    -- Im an idiot, wasnt working because latch flag comparison was <='1' nhahahahaha
+			    -- Im an idiot, wasnt working because latch flag comparison was <='1' like an assignment nhahahahaha
 				if latch_flag='1' then
 					shift_reg(0) <= '0';
 					shift_reg(8 downto 1) <= data_in;

@@ -26,5 +26,22 @@ set_property IOSTANDARD LVCMOS33 [get_ports start_flag]
 # JE2 = W16, This is the one
 # JE8 = U17, didnt work
 
+# Tx Pins 
 set_property PACKAGE_PIN W16 [get_ports tx]
 set_property IOSTANDARD LVCMOS33 [get_ports tx]
+
+# YOU FORGOT TO ADD RX PIN MONKEY
+# Should be JE3
+set_property PACKAGE_PIN J15 [get_ports rx]
+set_property IOSTANDARD LVCMOS33 [get_ports rx]
+
+
+## LED for if an 'a' is received from putty
+# LED 0
+set_property PACKAGE_PIN M14 [get_ports a_received_led]
+set_property IOSTANDARD LVCMOS33 [get_ports a_received_led]
+
+# LED 1
+## LED for if there is a parity error
+set_property PACKAGE_PIN M15 [get_ports rx_err_led]
+set_property IOSTANDARD LVCMOS33 [get_ports rx_err_led]
