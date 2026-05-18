@@ -39,7 +39,7 @@ architecture A1 of uart_tx is
 
 begin
 	tx <= '1' when tx_ctrl='1' else shift_reg(0);
-	parity_reg <= parity_check(data_in);	
+	parity_reg <= parity_check(data_in, positive_parity);	
 
 
 	shift_reg_proc: process(clk)
